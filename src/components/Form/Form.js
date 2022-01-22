@@ -15,10 +15,17 @@ const Form = () => {
     tags: "",
     selectedFile: "",
   });
+  
   const classes = useStyles();
   const dispatch = useDispatch();
-
-  const clear = () => {};
+  
+  const clear = () => {setPostData({  
+    creator: "",
+    title: "",
+    message: "",
+    tags: "",
+    selectedFile: "",
+  })};
 
   const handleSubmit = async (e) => {
       e.preventDefault();
